@@ -1,0 +1,365 @@
+/*!
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+@media(max-width:767px) {
+.hideinmobile {
+	display: none;
+	}
+}
+
+@media(min-width:767px) {
+.hideinscreen {
+	display: none;
+	}
+}
+/* so the bullet points stay left on mobile*/
+	 .keepleft {
+	 	text-align: left;
+	 	}
+/** for the new header**/
+.head{
+	padding-top:70px;	
+	margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+	}
+.headerr{
+background: #254377; /* Old browsers */
+background: -moz-linear-gradient(top, #254377 0%, #e5e5e5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#254377), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #254377 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #254377 0%,#e5e5e5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #254377 0%,#e5e5e5 100%); /* IE10+ */
+background: linear-gradient(to bottom, #254377 0%,#e5e5e5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#254377', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+@media(max-width:767px){
+	.head{
+		width: 70%;		
+		padding-top: 40px;
+		}		
+	}
+	 	
+
+
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+	
+	/*taking out the height command because otherwise some words bleed into the about section
+    height: 100%;
+    */
+    
+    padding-top: 15px;
+    padding-bottom: 100px;
+    text-align: left;
+    background: #fff;
+}
+
+.about-section {
+
+	 /*taking out the height command because otherwise some words bleed into the about section
+    height: 100%;
+    */
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: left;
+    background: #eee;
+}
+
+.services-section {
+    
+    /*taking out the height command because otherwise some words bleed into the about section
+    height: 100%;
+    */
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: #fff;
+}
+
+.contact-section {
+     
+     /*taking out the height command because otherwise some words bleed into the about section
+    height: 100%;
+    */
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: #eee;
+}
+.contact{
+    margin-top: 0em;
+    padding-top: 40px;
+    padding-bottom: 4em;
+}
+
+.head{
+	margin-top:50px;	
+	}
+/* For the flags*/
+.flag{
+	height: 1em;
+	margin-right: 0.5em;
+	}
+/* For the blue*/	
+.blue{
+	background-color:#254377;
+	color:white;
+}
+.bluebordered{
+	border:3px solid #254377;
+	}
+.bluetext{
+    color: #254377; ß
+    }
+
+/* For the shadows*/
+.drop-shadow {
+    -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, .5);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .5);
+    border-radius:5px;
+}
+
+.table-shadow {
+    -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, .5);
+    border-radius:5px;
+}
+
+/* For the tabs text*/
+.lead {
+  margin-top: 2em;
+  color:black;
+  text-align: left;
+  font-size: 15px;
+}
+.tab-content {
+    padding: 0em 3em;
+    border-radius: 0px;
+}
+
+
+/* For the teachers pic to skew*/
+.featurette-image {
+  text-align: center;
+  -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+    margin-left: 0.5em;
+    display: block;
+margin: 35px auto;
+}
+
+/* For the teachers tefl and business experience button*/
+.label{
+display: block;
+max-width: 300px;
+min-height: 20px;
+}
+.teachermargin{
+margin-bottom: 30px;
+	}
+
+/* For the navbar*/
+.nav-tabs > li > a {
+  border: 1px solid #254377;
+  margin-right: 30px;
+  color: #254377;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.nav-tabs > li.active > a , .nav-tabs > li.active > a:focus, .nav-tabs > li > a:hover, .nav-tabs > li.active > a:hover {
+    background-color: #254377;
+    color:white;
+    border-color: #254377;
+    -webkit-box-shadow: 5px 0px 5px -2px rgba(0, 0, 0, .5);
+    box-shadow: 5px 2px 5px -2px #000000;
+    border-radius:2px; 
+}
+.nav-tabs > li > a:hover {
+    background-color: #254377;
+}
+.nav-tabs {
+    border:0px;
+}
+.navbar-default {
+    border-color:black;
+    border-radius: 0px;
+}
+.navbar-default .navbar-collapse{
+    color:black;
+}
+.navbar-default .navbar-nav>li>a{
+    color:white;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav > li > a:hover{
+    font-weight: 800;
+    color: #254377;
+    background-color: white;
+
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+.menulogo{
+	margin-top: -0.4em;
+    height: 2em;	
+	}
+
+/* For the speech bubbles next to contact*/
+.chats{
+      float:right;
+      margin: -140px -40px 0px;
+      -ms-transform: rotate(10deg); /* IE 9 */
+        -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+        transform: rotate(10deg);
+    }
+
+
+/* For the contact fom text area*/    
+#input4 {
+    height: 140px;
+}
+
+/* Table section */
+th {
+    text-align: center;
+    width: 20px;
+}
+
+/* For the wells */
+.well {
+    text-align: center;
+    border: 3px solid #254377;
+    border-radius: 0px 0px 0px 0px;
+    color: white;
+}
+
+/* For button in teachers section - to align certifications*/
+.videoButton {
+    margin-bottom: 30px;
+}
+
+
+
+/* To make modal-content scrollable */
+.modal-content
+{
+  height:100%;
+  overflow:auto;
+}
+
+@media(max-width:767px) {
+	.intro-section {
+	
+	/*taking out the height command because otherwise some words bleed into the about section
+    height: 100%;
+    */
+    
+    padding-top: 1px;}
+    
+    .nav-tabs {
+        visibility: hidden;
+    }
+	.head{
+		width: 70%;		
+		padding-top: 40px;
+		}		
+	}
+    /* Make glyphicons look nice */
+    .glyphicon-chevron-left, .glyphicon-chevron-right, .glyphicon-circle-arrow-left, .glyphicon-circle-arrow-right{
+        background: #254377;
+        color: white;
+        height:35px;
+        width: 40px;
+        padding: 10px;
+    }
+    /* align text in tabs to center on mobile */
+    .tab-content {
+        text-align: center;
+    }
+
+    .lead {
+        text-align:center;
+    }
+	.chats {
+		margin: -140px -20px 0px;	
+		transform: rotate(0deg);	
+		}
+    .drop-shadow {
+        -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    border-radius:0px;
+    }
+	.label{  
+    margin-left: auto;
+    margin-right: auto
+	}
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+
+    /* Hide mobile arrows on desktop view */
+    .mobile-arrows {
+            visibility: hidden;
+        }
+
+}
+
+
+
+/*this is so that theres a max width for the containers*/
+
+@media(min-width:992px) {
+    .container{
+                max-width: 900px;
+        }
+        
+    }
+
+@media (max-width:992px) {
+    .featurette-image {
+  -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    height:70%;
+    }
+
+}

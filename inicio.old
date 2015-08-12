@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Christian Bolorinos and John Bolorinos">
+
+    <title>Be Fluent - Expertos en Idiomas</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300&subset=latin-ext' rel='stylesheet' type='text/css'>
+   
+    <!-- Social Sidebar -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5401f9b4387d6e8d"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="ico.png">
+
+</head>
+<!-- docModal -->
+<div class="modal fade" id="docModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+        <h4 class="modal-title" id="myModalLabel"><b>Política de Privacidad</b></h4>
+      </div>
+      <div class="modal-body">
+        <object type="application/pdf" data="PrivacyPolicy.pdf" class="pdf"></object>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- faqModal -->
+<div class="modal fade" id="faqModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+        <h4 class="modal-title" id="myModalLabel"><b>Preguntas Frecuentes</b></h4>
+      </div>
+      <div class="modal-body">
+        <h4><b>Q: What happens if a class is cancelled?</b></h4>
+        <p><b>A:</b> If a student or teacher cancels a class, it there must be at 
+          least 24 hours notice. This is to ensure that neither the 
+          student or teacher wastes time. If the student fails to cancel 
+          the class 24 hours before, the student can not make up the 
+          class. </p>
+        <br>
+        <h4><b>Q: How do I reschedule a cancelled class?</b></h4>
+        <p><b>A:</b> We at BeFluent will be notified but the teacher will work 
+          with you to find a time to make up the class within the 
+          month. </p>
+          <br>
+          <h4><b>Q: What if I want to change teachers?</b></h4>
+        <p><b>A:</b> We at BeFluent pride student satisfaction over everything, 
+          therefore we have an open door for our students to voice 
+          ways we can help enrich their studies.</p>
+          <br>
+          <h4><b>Q: What if I want to learn a language other than English or Spanish?</b></h4>
+        <p><b>A:</b> Thanks to modern technology we can connect you with a 
+          teacher of whatever language you like. We also have a 
+          database of teachers of languages ranging from Portuguese 
+          to Mandarin.</p>
+          <br>
+          <h4><b>Q: Are there payment plans?</b></h4>
+        <p><b>A:</b> For Enterprise Packages we require that the full amount 
+          be paid before the start of classes, unless more than 72 
+          hours are wanted, in such cases we can set up personalized 
+          payment options.</p>
+          <p>For Individual Packages under 30 hours, we require the full 
+            amount be paid before the start of classes. For those buying 
+            over 30 hours, we are available to set up personalized 
+            payment options.</p>
+            <p>Students can pay for classes either via PayPal or wire transfer.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-static">
+
+    <header class="masthead container">
+        
+            
+                    <img class="img-responsive" src="header.jpg" style="margin:0px; margin-left:0px;"></img>
+
+                
+        
+      <!--<div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive mainlogo" src="mainlogo.png" alt="">
+                    <div class="intro-text">
+                        <hr class="star-light">
+                        <div class="info">A gift that nobody can take away from you.</div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+  </header>  
+
+    <!-- Navigation -->
+    <div id="nav">
+        <nav class="navbar navbar-default navbar-static blue" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar blue"></span>
+                        <span class="icon-bar blue"></span>
+                        <span class="icon-bar blue"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top"><img src=logo.png id="menuLogo"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li>
+                            <a class="page-scroll" href="#intro">Sobre Nosotros</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#teachers">Profesores</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#packages">Planes</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                              <li><a href="index.html">English</a></li>
+                              <li><a href="inicio.html">Español</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+    </div>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container col-lg-8 col-lg-offset-2">
+              <!-- Nav tabs -->
+                <ul id="aboutTabs" class="nav nav-tabs" role="tablist">
+                    <li class="active"><a href="#about1" role="tab" data-toggle="tab">¿Como Funciona?</a></li>
+                      <li><a href="#about2" role="tab" data-toggle="tab">Sobre Nosotros</a></li>
+                      <li><a href="#about3" role="tab" data-toggle="tab">Beneficios de Aprender Inglés</img></a></li>
+                </ul>
+
+                
+
+        <div class="tab-content bluebordered drop-shadow">
+            
+            <div class="tab-pane fade in active" id="about1" data-id="11">
+                <div class="row">
+      
+                  <div class="box">
+                    <div class="mobile-arrows">
+                  <a href="#about2" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right pull-right"></a></span>
+                  <a href="#about3" data-toggle="tab"><span class="glyphicon glyphicon-chevron-left pull-left"></a></span>
+                </div>
+                    <div class="row featurette">
+                      <div class="col-md-12">
+
+                        <h2 class="featurette-heading">¿Como Trabajamos?<span class="text-muted"> Clases personalizadas y cómodas</span></h2>
+                        <!-- Mobile Arrows -->
+                
+                      <p class="lead" id="aboutText">BeFluent te permite tomar control absoluto de tus estudios y aprendizaje del idioma, y como resultado 
+                        sirve para mejorar las oportunidades disponibles para ti, tanto en lo profesional como en lo social. Con 
+                        la opción de mejorar tu nivel de inglés o español vía Skype, BeFluent te ofrece una forma sencilla y 
+                        conveniente de poder aprender y mejorar en el idioma, a tu conveniencia y desde la comodidad de tu propia casa, oficina, o cualquier otro lugar que tenga acceso a Internet.</p>
+                        <p class="lead" id="aboutText">Además de la comodidad que te podemos proporcionar, BeFluent ofrece a sus clientes (estudiantes) 
+                        una plantilla de profesores nativos y cualificados para brindarte la mejor experiencia aprendiendo de 
+                        una manera fácil y cómoda. Sin importar donde estés ubicado, a través de nosotros tienes acceso a la 
+                        mejor guía de aprendizaje disponible.</p>
+                       
+                      </div>
+                
+                    </div><!--/.row-featurette -->
+
+                   </div> <!-- /.box -->
+                </div> <!-- /.row -->
+            </div><!-- /.tab-pane -->
+
+            <div class="tab-pane fade" id="about2" data-id="12">          
+              <div class="row">
+
+          
+                  <div class="box"> 
+                    <div class="mobile-arrows">
+                          <a href="#about3" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right pull-right"></a></span>
+                          <a href="#about1" data-toggle="tab"><span class="glyphicon glyphicon-chevron-left pull-left"></a></span>
+                       </div>
+                    <div class="row featurette">
+                      <div class="col-md-12">
+                        <h2 class="featurette-heading">Sobre Nosotros<span class="text-muted">  Rompiendo barreras</span></h2>
+                        
+                        <p class="lead" id="aboutText">Nuestro sistema de aprendizaje one-on-one vía Skype permite a sus alumnos personalizar sus clases 
+                                  de la mejor manera posible, a la vez manteniendo técnicas de enseñanza que logran desarrollar la 
+                                  capacidad del alumno de aprender de una manera más rápida y fluida. La ventaja de tener en nuestra 
+                                  plantilla a profesores nativos en el idioma de elección ayuda incluso a que el alumno pueda desarrollar 
+                                mejor pronunciación con el idioma y resolver dudas que puedan ir surgiendo del idioma en si a lo largo 
+                              de las clases. Nuestra clase gratis de introducción permite al alumno conocer a su profesor y poder 
+                            organizar mejor las clases deseadas que uno quiera recibir, tanto en poner más énfasis en temas de 
+                          conversación, practicas para entrevistas, escritura, o mejor pronunciación. A la vez, esta clase de 
+                        introducción permite tanto al alumno como al profesor organizar sus calendarios de la mejor manera 
+                      para que el alumno pueda recibir sus clases en las horas o los momentos del día que mejor les 
+                    convenga. Además, esta introducción permite al profesor conocer el nivel del alumno, un factor muy 
+                  importante para el futuro desarrollo de la persona recibiendo las clases.</p>
+
+                        <p class="lead" id="aboutText">BeFluent ayuda a romper las barreras de acceso limitado a profesores nativos, especialmente cuando  
+                                  uno no vive en ese país. BeFluent ha creado una vía para poder facilitar este sistema de enseñanza y 
+                                  ofrecer a nuestros alumnos la atención inmediata de profesores bilingües en el idioma que quieran 
+                                aprender. Nos aseguramos que el ritmo de enseñanza sea el más cómodo y adecuado a cada uno, 
+                              trabajando a un nivel más rápido o más lento de acuerdo al desarrollo de cada alumno y las 
+                            necesidades que tengan, desarrollando cada paso a su debido tiempo.</p>
+                     
+                          
+                      </div><!-- /.col -->
+                      
+                    </div><!--/.row-featurette -->
+                   
+                  </div> <!-- /.box -->
+                </div> <!-- /.row -->
+            </div><!-- /.tab-pane -->
+
+            <div class="tab-pane fade" id="about3" data-id="13">
+                <div class="row">
+      
+                  <div class="box">
+                    <div class="mobile-arrows">
+                      <a href="#about1" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right pull-right"></a></span>
+                      <a href="#about2" data-toggle="tab"><span class="glyphicon glyphicon-chevron-left pull-left"></a></span>
+                    </div>
+                    <div class="row featurette">
+                      <div class="col-md-12">
+
+                        <h2 class="featurette-heading">Beneficios de Aprender Inglés<span class="text-muted">  Descubre nuestro potencial</span></h2>
+                
+                        <p class="lead" id="aboutText">El inglés hoy en día se considera la lengua mundial y de referencia absoluta tanto en lo profesional 
+                        como en la política y estudios. Ahora más que nunca, la gente empieza a ver y entender la importancia 
+                        de aprender y poder comunicarte mejor con el inglés, una vía de gran desarrollo del cual te abre 
+                        muchas puertas profesionales.</p>
+
+                        <p class="lead" id="aboutText">Compañías alrededor del mundo ponen gran énfasis en el conocimiento del inglés y como prioridad da 
+                        en las mejores compañías del mundo opinan que poder hablar y comunicarte en inglés, ya tienes mas 
+                        del 50% ganado durante el proceso de selección al ver perfiles de candidatos. Por ello, para avanzar 
+                        profesionalmente, esta nueva generación tiene que poseer la habilidad y el conocimiento necesario del 
+                        inglés. No tenerla te puede perjudicar en muchas maneras y mientras que vayan pasando los años, este factor seguirá creciendo cada vez más. </p>
+
+                        <p class="lead" id="aboutText">Importantes detalles a tener en cuenta del inglés:
+                          <ul>
+                            <li>Es una lengua oficial en 75 países con un alcance de alrededor de 2 billones de personas</li>
+                            <li>A nivel global, una de cada cuatro personas tiene la capacidad suficiente para comunicarse con el inglés</li>
+                            <li>80% de la información electrónica a nivel mundial, esta guardada en inglés</li>
+                          </ul>
+                          <i>*Referencia: British Council & Eurobarometer 50</i></p>
+                      </div>
+                
+                    </div><!--/.row-featurette -->
+
+                   </div> <!-- /.box -->
+                </div> <!-- /.row -->
+            </div><!-- /.tab-pane -->
+
+          
+
+        </div><!-- /.tab-content -->  
+       </div><!-- /.container -->
+    </section>
+
+    <!-- About Section -->
+    <section id="teachers" class="teachers-section">
+        
+            <div class="container col-lg-8 col-lg-offset-2">
+                     <div class="well drop-shadow blue">
+                      <h1>Nuestros Profesores</h1>
+                    </div>
+                    
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs teacherTabs" role="tablist">
+                            <li class="active"><a href="#teacher1" role="tab" data-toggle="tab" class="tabs-shadow">Natalie (Reino Unido)</a></li>
+                              <li><a href="#teacher2" role="tab" data-toggle="tab">Enda (Irlanda)</a></li>
+                              <li><a href="#teacher3" role="tab" data-toggle="tab">Edurne (España)</a></li>
+                              <li><a href="#teacher4" role="tab" data-toggle="tab">Kim (EEUU/Reino Unido)</a></li>
+                        </ul>
+
+                        
+
+                <div class="tab-content bluebordered drop-shadow">
+                    
+                    <div class="tab-pane fade in active" id="teacher1" data-id="21">
+                        <div class="row">
+                  
+                            <div class="box">
+                            <div class="row featurette">
+
+                              <div class="col-md-4 responsive">
+                                <img class="featurette-image img-thumbnail drop-shadow" src="natalie.jpg" alt="Generic placeholder image">
+                                <h2 class="featurette-heading" id="teacherName"><img src="uk.png" class="flag">Natalie</h2> 
+                                    <!-- Mobile Arrows -->
+                                <div class="mobile-arrows _tabs_navigation">
+                                  <a href="#teacher2" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right pull-right"></a></span>
+                                  <a href="#teacher4" data-toggle="tab"><span class="glyphicon glyphicon-chevron-left pull-left"></a></span>
+                                </div>
+                              </div>
+
+
+                              <div class="col-md-8">
+<p class="lead">
+
+Natalie se convirtió en una profesora cualificada para enseñar Ingles (TEFL) en 
+
+2010 y ha dado clases en escuelas españolas de verano. A la vez, tiene gran 
+
+experiencia trabajando con estudiantes que varían desde los más pequeños hasta 
+
+profesionales de nivel empresarial, preparando también a los estudiantes para 
+
+la examinación del Examen de Ingles de Cambridge. Natalie tiene un titulo de 
+
+Master en Antropología de la Universidad de Roehampton. En sus tiempos libres, 
+
+cuando no se encuentra impartiendo clases de ingles, a Natalie le encanta viajar y 
+
+la danza.
+                                </p>
+                                  
+                                  
+
+                                  <button class="btn btn-primary videoButton" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/loFtozxZG0s">Mi Video</button>
+                                  <br>
+                                  <br>
+                                  <br>
+                                  
+                                  <p class="label label-success certifications"><span class="glyphicon glyphicon-ok"></span>          TEFL Certified</p>
+
+                                  <p class="label label-success certifications"><span class="glyphicon glyphicon-briefcase"></span>          Business Experience</p>
+                                  <br>
+                                  <br>
+                              </div>
+                              
+                            </div><!--/.row-featurette -->
+
+                                     </div> <!-- /.box -->
+                                </div> <!-- /.row -->
+                    </div><!-- /.tab-pane -->
+
+                   
+                    <div class="tab-pane fade" id="teacher2" data-id="22">                  
+                            <div class="row">
+                          
+                                <div class="box"> 
+                            <div class="row featurette">
+
+                              <div class="col-md-4">
+                                <img class="featurette-image img-thumbnail drop-shadow" src="enda.jpg" alt="Generic placeholder image">
+                                <h2 class="featurette-heading" id="teacherName"><img src="ireland.png" class="flag">Enda</h2>
+                                <div class="mobile-arrows">
+                                  <a href="#teacher3" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right pull-right"></a></span>
+                                  <a href="#teacher1" data-toggle="tab"><span class="glyphicon glyphicon-chevron-left pull-left"></a></span>
+                               </div>
+                              </div>
+
+                              <div class="col-md-8">
+                                
+
+                                <p class="lead">
+Enda es un profesor cualificado para enseñar Ingles (TEFL) con extensa 
+
+experiencia impartiendo clases de Ingles como lengua secundaria en España. 
+
+Actualmente trabaja en una academia de ingles en donde imparte clases privadas 
+
+one-on-one y también cursos específicos en ingles a grupos de estudiantes. A la 
+
+vez, Enda imparte clases de ingles a algunas de las compañías mas grandes de 
+
+España en los diferentes sectores de negocio, preparando a los estudiantes para 
+
+diferentes exámenes de certificación. Además de impartir clases de ingles, Enda 
+
+es un exitoso escritor literario y también hace grabación de documentales que 
+
+cubren diversos temas de interés.
+</p>
+                                  
+                                  
+
+                                  <button class="btn btn-primary" href="#teacher1" data-toggle="modal" data-target=".bs-example-modal-lg">Mi Video</button>
+                                  <br>
+                                  <br>
+                                  <br>
+                                <p class="label label-success certifications"><span class="glyphicon glyphicon-ok"></span>          TEFL Certified</p>
+                                <br>
+                                  <br>
+                               
+                              </div>
+                              
+                            </div><!--/.row-featurette -->       
+
+                                    </div> <!-- /.box -->
+                        </div> <!-- /.row -->
+                    </div><!-- /.tab-pane -->
+
+                    <div class="tab-pane fade" id="teacher3" data-id="23">                  
+                            <div class="row">
+                          
+                                <div class="box"> 
+                            <div class="row featurette">
+
+                              <div class="col-md-4">
+                                <img class="featurette-image img-thumbnail drop-shadow" src="edurne.jpg" alt="Generic placeholder image">
+                                <h2 class="featurette-heading" id="teacherName"><img src="spain.png" class="flag">Edurne</h2>
+                                <div class="mobile-arrows _tabs_navigation">
+                                  <a href="#teacher4" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right pull-right"></a></span>
+                                  <a href="#teacher2" data-toggle="tab"><span class="glyphicon glyphicon-chevron-left pull-left"></a></span>
+                               </div>
+                              </div>
+
+                              <div class="col-md-8">
+                                <p class="lead">
+Edurne Sanz es Profesora Especializada en la Enseñanza de Español como 
+
+Lengua Extranjera (ELE). En la actualidad vive y trabaja en Madrid. Ha trabajado 
+
+en diferentes escuelas y tiene experiencia en la preparación de exámenes DELE. 
+
+Es una apasionada de las novelas policíacas y le encantan las series de televisión. 
+
+Además de enseñar, también le gusta aprender idiomas; habla inglés y portugués. 
+
+Es una persona entusiasta y muy paciente. Conecta muy bien con sus alumnos y 
+
+siempre trata de transmitirlos energía y pasión por el español.
+</p>
+                                  
+                                  
+
+                                  <button class="btn btn-primary" href="#teacher1" data-toggle="modal" data-target=".bs-example-modal-lg">Mi Video</button>
+                                  <br>
+                                  <br>
+                                  <br>
+                                  <p class="label label-success certifications"><span class="glyphicon glyphicon-ok"></span>          ELE Certified</p>
+                                  
+                                  <p class="label label-success certifications"><span class="glyphicon glyphicon-briefcase"></span>          Business Experience</p>
+                                  <br>
+                                  <br>
+                               
+                              </div>
+                              
+                            </div><!--/.row-featurette -->       
+
+                                    </div> <!-- /.box -->
+                        </div> <!-- /.row -->
+                    </div><!-- /.tab-pane -->
+			 <div class="tab-pane fade" id="teacher4" data-id="24">                  
+                            <div class="row">
+                          
+                                <div class="box"> 
+                            <div class="row featurette">
+
+                              <div class="col-md-4">
+                                <img class="featurette-image img-thumbnail drop-shadow" src="kim.jpg" alt="Generic placeholder image">
+                                <h2 class="featurette-heading" id="teacherName"><img src="uk.png" class="flag"><img src="USA.png" class="flag">Kim</h2>
+                                <!-- Mobile Arrows -->
+                                  <div class="mobile-arrows">
+                                    <a href="#teacher1" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right pull-right"></a></span>
+                                    <a href="#teacher3" data-toggle="tab"><span class="glyphicon glyphicon-chevron-left pull-left"></a></span>
+                                 </div>
+                              </div>
+
+                              <div class="col-md-8">
+
+                                
+
+                                <p class="lead">
+Kim es una viajera en toda regla y lleva impartiendo clases de Ingles en España 
+
+desde hace tres años, la mayor parte del tiempo en Madrid. Además de su gran 
+
+experiencia impartiendo clases privadas de ingles, uno-a-uno, Kim ha trabajado 
+
+para el ministerio de educación española, asistiendo en la enseñanza del Ingles y 
+
+su continuo desarrollo en colegios públicos de Madrid. Le encanta probar nuevas 
+
+comidas, y según ella ha tenido la gran oportunidad de poder vivir en dos de 
+
+países al cual ella considera los más felices del mundo: Costa Rica y Malawi.
+</p>
+                                  
+                                  
+
+                                  <button class="btn btn-primary" href="#teacher1" data-toggle="modal" data-target=".bs-example-modal-lg">Mi Video</button>
+                                  <br>
+                                  <br>
+                                  <br>
+
+                                <p class="label label-success certifications"><span class="glyphicon glyphicon-briefcase"></span>          Business Experience</p>
+                                <br>
+                                  <br>
+
+                               
+                              </div>
+                              
+                            </div><!--/.row-featurette -->
+                                   
+                                    </div> <!-- /.box -->
+                        </div> <!-- /.row -->
+                    </div><!-- /.tab-pane -->
+
+                    <img src="pictures.png" class="teacherPolaroids" style="visibility:hidden">
+
+                </div><!-- /.tab-content -->    
+         </div><!-- /.container -->
+        
+    </section>
+
+    <!-- Services Section -->
+    <section id="packages" class="packages-section">
+        <div class="container col-lg-8 col-lg-offset-2 pad">
+                   
+                    
+                <!-- Nav tabs -->
+                <ul id="myTab" class="nav nav-tabs" role="tablist">
+                    <li class="active"><a href="#services1" role="tab" data-toggle="tab">Planes Personales</a></li>
+                      <li><a href="#services2" role="tab" data-toggle="tab">Planes para Negocios</a></li>
+                </ul>
+
+                
+
+        <div class="tab-content">
+            
+            <div class="tab-pane fade in active" id="services1" data-id="31">
+                <div class="row">
+                  <div class="box">
+      <!-- Mobile Arrows -->
+                <div class="mobile-arrows _tabs_navigation">
+                  <a href="#services2" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right pull-right"></a></span>
+                  <a href="#services2" data-toggle="tab"><span class="glyphicon glyphicon-chevron-left pull-left"></a></span>
+                </div>
+
+                <h2 class="text-center">Planes Personales</h2>
+                  
+                    <table class="table table-bordered table-shadow">
+                        <thread>
+                          <tr class="blue">
+                            <th><img src="clock.png"></th>
+                            <th><img src="euro.png"></th>
+<th><img src="calendar.png"></th>
+                            <th><img src="briefcase.png"></th>
+                          </tr>
+                        </thread>
+                        <tr class="active">
+                          <th>1-10 horas</th>
+                          <th>25€/hora</th>
+<th>valido durante 8 semanas</th>
+                          <th><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="jbolorinos@gmail.com">
+<input type="hidden" name="lc" value="ES">
+<input type="hidden" name="item_name" value="Be Fluent">
+<input type="hidden" name="amount" value="25.00">
+<input type="hidden" name="currency_code" value="EUR">
+<input type="hidden" name="button_subtype" value="services">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_LG.gif:NonHostedGuest">
+<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
+<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+</form>
+</th>
+                        </tr>
+                        <tr class="active">
+                          <th>10-20 horas</th>
+                          <th>22€/hora</th>
+<th>valido durante 12 semanas</th>
+                          <th><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="jbolorinos@gmail.com">
+<input type="hidden" name="lc" value="ES">
+<input type="hidden" name="item_name" value="Be Fluent">
+<input type="hidden" name="amount" value="25.00">
+<input type="hidden" name="currency_code" value="EUR">
+<input type="hidden" name="button_subtype" value="services">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_LG.gif:NonHostedGuest">
+<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
+<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+</form>
+</th>
+                        </tr>
+                        <tr class="active">
+                          <th>20-30 horas</th>
+                          <th>20€/hora</th>
+<th>valido durante 18 semanas</th>
+                          <th><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="jbolorinos@gmail.com">
+<input type="hidden" name="lc" value="ES">
+<input type="hidden" name="item_name" value="Be Fluent">
+<input type="hidden" name="amount" value="25.00">
+<input type="hidden" name="currency_code" value="EUR">
+<input type="hidden" name="button_subtype" value="services">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_LG.gif:NonHostedGuest">
+<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
+<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+</form>
+</th>
+                        </tr>
+                        <tr class="active">
+                          <th>30+ horas</th>
+                          <th>18€/hora</th>
+<th>valido durante 24 semanas</th>
+                          <th><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="jbolorinos@gmail.com">
+<input type="hidden" name="lc" value="ES">
+<input type="hidden" name="item_name" value="Be Fluent">
+<input type="hidden" name="amount" value="25.00">
+<input type="hidden" name="currency_code" value="EUR">
+<input type="hidden" name="button_subtype" value="services">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_LG.gif:NonHostedGuest">
+<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
+<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+</form>
+</th>
+                        </tr>
+
+                    </table>
+
+                   </div> <!-- /.box -->
+                </div> <!-- /.row -->
+                <p align="center" class="bluetext">* ¡Todos nuestros planes incluyen una sesión de introducción gratis!</p>
+            </div><!-- /.tab-pane -->
+
+            <div class="tab-pane fade" id="services2" data-id="32">          
+              <div class="row">
+                <div class="box"> 
+                  <div class="mobile-arrows _tabs_navigation">
+                  <a href="#services1" data-toggle="tab"><span class="glyphicon glyphicon-chevron-right pull-right"></a></span>
+                  <a href="#services1" data-toggle="tab"><span class="glyphicon glyphicon-chevron-left pull-left"></a></span>
+               </div>
+                  <h2 class="text-center">Planes para Negocios</h2>
+            
+                <table class="table table-bordered table-shadow table.responsive">
+                      <thread>
+                        <tr class="blue">
+                          <th><img src="clock.png"></th>
+                          <th><img src="euro.png"></th>
+<th><img src="calendar.png"></th>
+                          <th><img src="briefcase.png"></th>
+                        </tr>
+                      </thread>
+                      <tr class="active">
+                        <th>18 horas</th>
+                        <th>25€/hora</th>
+<th>valido durante 8 semanas</th>
+
+                        <th><script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=jbolorinos@gmail.com" 
+                          data-button="buynow" 
+                          data-name="Be Fluent" 
+                          lc="ES"
+                          data-quantity="1" 
+                          data-amount="25" 
+                          data-currency="eur"
+                      ></script></th>
+                      </tr>
+                      <tr class="active">
+                        <th>36 horas</th>
+                        <th>22€/hora</th>
+<th>valido durante 12 semanas</th>
+                        <th><script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=jbolorinos@gmail.com" 
+                          data-button="buynow" 
+                          data-name="Be Fluent" 
+                          data-quantity="1" 
+                          data-amount="22" 
+                          data-currency="eur"
+                      ></script></th>
+                      </tr>
+                      <tr class="active">
+                        <th>54 horas</th>
+                        <th>20€/hora</th>
+<th>valido durante 18 semanas</th>
+                        <th><script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=jbolorinos@gmail.com" 
+                          data-button="buynow" 
+                          data-name="Be Fluent" 
+                          data-quantity="1" 
+                          data-amount="20" 
+                          data-currency="eur"
+                      ></script></th>
+                      </tr>
+                      <tr class="active">
+                        <th>72 horas</th>
+                        <th>18€/hora</th>
+<th>valido durante 24 semanas</th>
+                        <th><script async="async" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=jbolorinos@gmail.com" 
+                          data-button="buynow" 
+                          data-name="Be Fluent" 
+                          data-quantity="1" 
+                          data-amount="18" 
+                          data-currency="eur"
+                      ></script></th>
+                      </tr>
+
+                  </table>
+                   
+                  </div> <!-- /.box -->
+                </div> <!-- /.row -->
+                <p align="center" class="bluetext">* ¡Todos nuestros planes incluyen una sesión de introducción gratis!</p>
+            </div><!-- /.tab-pane -->
+
+          
+
+        </div><!-- /.tab-content -->  
+       </div><!-- /.container -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container col-lg-6 col-lg-offset-3">
+            <div class="row">
+                <div class="well drop-shadow blue">
+                    <h1>Contacto</h1>
+                    <img src="chats.png" class="chats">
+                </div>
+                    <div class="col-lg-12 blue contact drop-shadow">
+                      <form role="form" method="POST" action="contact-form-submission.php">
+                        <div class="row ">
+                          <div class="col-lg-8 text-center">
+                            <div class="form-group input-group-lg">
+                              <input type="text" name="contact_name" class="form-control" id="input1" placeholder="Nombre y Apellidos" required data-validation-required-message="Por favor incluya su nombre.">
+                            </div>
+
+                            <div class="clearfix"></div>
+
+                            <div class="form-group input-group-lg">
+                              <input type="email" name="contact_email" class="form-control" id="input2" placeholder="Correo Electronico" required data-validation-required-message="Por favor incluya su dirrección de correo electronico">
+                            </div>
+                          </div>
+
+                        <div class="col-lg-12 text-center">
+                          <div class="form-group input-group-lg">
+                            <textarea name="contact_message" class="form-control" id="input4" placeholder="Su Mensaje" required data-validation-required-message="Por favor incluya un mensaje."></textarea>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <input type="hidden" class="input-group-lg" name="save" value="contact">
+                          <button type="submit" class="btn btn-primary btn-lg pull-right">Enviar</button>
+                        </div>
+                      </div>
+                      </form>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="footer-below blue">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4 centralize">
+                        <h3>Nuestra Oficina</h3>
+                        <p>6924 229th PL NE Redmond<br>WA, USA 98053</p>
+                    </div>
+                    <div class="footer-col col-md-4 centralize">
+                        
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/pages/Be-Fluent/711247425615830" class="btn-social btn-outline"><img style="margin-top: 5px; color:white;" src="facebook.png"></img></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><img src="gmail.png" style="margin-top: 5px; color:white;"></img></a>
+                            </li>
+                            <li>
+                                <a href="http://www.linkedin.com/company/befluent-online?trk=tyah&trkInfo=tarId%3A1409335052604%2Ctas%3Abefluent%2Cidx%3A1-1-1" class="btn-social btn-outline"><img src="linkedin.png" style="margin-top: 5px; color:white;"></img></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4 centralize">
+                        <h3>Sobre Be Fluent</h3>
+                        <p><a data-toggle="modal" data-target="#docModal">Política de Privacidad</a></p>
+                        <p><a data-toggle="modal" data-target="#faqModal">Preguntas Frequentes</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" style="color: white;">
+                        Copyright &copy; <a style="color: white;" href="http://www.cebolorinos.com">cbolorinos</a> and <a style="color: white;" href="http://www.jkbolorinos.com">jbolorinos</a> 2014
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+    <!-- PayPal Javascript -->
+    <script src="js/paypal-button.min.js"></script>
+
+    <script>
+$('#nav').affix({
+      offset: {
+        top: $('header').height()
+      }
+}); 
+
+  autoPlayYouTubeModal();
+
+  //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+  function autoPlayYouTubeModal() {
+      var trigger = $("body").find('[data-toggle="modal"]');
+      trigger.click(function () {
+          var theModal = $(this).data("target"),
+              videoSRC = $(this).attr("data-theVideo"),
+              videoSRCauto = videoSRC + "?autoplay=1";
+          $(theModal + ' iframe').attr('src', videoSRCauto);
+          $(theModal + ' button.close').click(function () {
+              $(theModal + ' iframe').attr('src', videoSRC);
+          });
+      });
+  }
+
+  $('.navbar-collapse a').click(function (e) {
+        if($('.navbar-toggle').css('display') == 'block' && !$(this).siblings().length){
+          $('.navbar-collapse').collapse('toggle');
+        }
+      });
+
+   
+</script>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5401f9b4387d6e8d"></script>
+
+
+
+
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div>
+                    <iframe width="100%" height="350" src=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
